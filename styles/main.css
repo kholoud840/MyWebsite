@@ -1,0 +1,182 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+code, strong, ul, li,
+footer, header, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+* {
+  box-sizing: border-box; }
+
+footer, header, section {
+  display: block; }
+
+body {
+  line-height: 1.4; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  display: inline-block; }
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px; }
+
+.container {
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1em; }
+
+.main-content {
+  padding: calc(64px - 30px) 0;
+  border-bottom: 1px solid #f1f1f1; }
+
+.main-content__title {
+  margin-bottom: calc(64px - 10px);
+  text-align: center;
+  color: #4F4F4F;
+  font-size: 18px;
+  font-weight: 300;
+  background: url(../image/svg/placeholder.svg) no-repeat;
+  background-position: center;
+  padding: 30px 0 10px 0; }
+  .main-content__title strong {
+    color: #2D9CDB;
+    text-transform: capitalize; }
+  @media (min-width: 550px) {
+    .main-content__title {
+      font-size: 22px; } }
+
+.skill-name {
+  color: #4F4F4F;
+  font-size: 22px;
+  margin-bottom: 16px; }
+
+.skill-desc {
+  color: #4F4F4F;
+  font-size: 16px; }
+
+.skill-set__item {
+  position: relative;
+  display: flex;
+  padding-bottom: 32px; }
+  @media (min-width: 550px) {
+    .skill-set__item:not(:last-child) {
+      padding-bottom: 64px; } }
+  .skill-set__item:not(:last-child):after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 28px;
+    width: 2px;
+    height: 100%;
+    background: #b4b4b4; }
+  .skill-set__item::before {
+    content: "";
+    display: block;
+    margin-right: 1.2em;
+    height: 56px;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 3px 6px #0000003b;
+    flex: 0 0 56px; }
+
+.item-1::before {
+  background: #2D9CDB;
+  background: url(../image/svg/002-code.svg) no-repeat 50%, #2D9CDB;
+  background-size: 30px; }
+
+.item-2::before {
+  background: #8F63E3;
+  background: url(../image/svg/001-layers.svg) no-repeat 50%, #8F63E3;
+  background-size: 30px; }
+
+.footer {
+  padding: 64px 0;
+  text-align: center;
+  background: #8F63E3; }
+  .footer p {
+    color: #fff;
+    margin-bottom: 16px;
+    font-size: 18px; }
+    @media (min-width: 550px) {
+      .footer p {
+        font-size: 20px; } }
+
+.footer-btn a {
+  color: #8F63E3;
+  padding: 8px 32px;
+  border-radius: 40px;
+  background: #fff;
+  font-size: 18px;
+  box-shadow: 0 2px 4px #593e7c; }
+
+.header {
+  text-align: center;
+  background: #fdfdff;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #2D9CDB;
+  border-top: 6px solid #2D9CDB; }
+  @media (min-width: 550px) {
+    .header {
+      font-size: 20px;
+      text-align: initial;
+      background: linear-gradient(lightgrey 2px, #fdfdff 0);
+      background-size: 100% 40px;
+      line-height: 43px;
+      background-origin: content-box; } }
+
+.header .container {
+  width: 800px; }
+
+.header h1 {
+  color: #2D9CDB;
+  font-size: 26px; }
+  @media (min-width: 550px) {
+    .header h1 {
+      text-indent: 2rem;
+      font-size: 20px; }
+      .header h1::before, .header h1::after {
+        color: #717171;
+        font-weight: 300; }
+      .header h1:before {
+        content: "<h1>"; }
+      .header h1:after {
+        content: "</h1>"; } }
+.header p {
+  color: #8F63E3;
+  font-size: 20px; }
+  @media (min-width: 550px) {
+    .header p {
+      text-indent: 2rem;
+      font-weight: 700; }
+      .header p::before, .header p::after {
+        color: #717171;
+        font-weight: 300; }
+      .header p:before {
+        content: "<p>"; }
+      .header p:after {
+        content: "</p>"; } }
+
+@media (min-width: 550px) {
+  .code-wrapper::before, .code-wrapper::after {
+    color: #717171;
+    font-weight: 300;
+    position: relative; }
+  .code-wrapper:before {
+    content: "<header>";
+    top: 8px; }
+  .code-wrapper:after {
+    content: "</header>";
+    top: -4px; } }
+
+/*# sourceMappingURL=main.css.map */
