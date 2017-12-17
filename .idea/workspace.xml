@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1651873-a7d5-4266-9f92-4365d0552f35" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/image/Search Results.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/image/be827bc47f240a815bccc39a02e37efa.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/image/image.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/image/images.jpg" afterPath="" />
-    </list>
+    <list default="true" id="e1651873-a7d5-4266-9f92-4365d0552f35" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -406,12 +401,12 @@
       <workItem from="1513440281680" duration="1794000" />
       <workItem from="1513442134615" duration="1816000" />
       <workItem from="1513443991355" duration="1869000" />
-      <workItem from="1513446031859" duration="850000" />
+      <workItem from="1513446031859" duration="1445000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67310000" />
+    <option name="totallyTimeSpent" value="67905000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1046" extended-state="6" />
