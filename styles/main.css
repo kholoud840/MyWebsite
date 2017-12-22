@@ -1,210 +1,68 @@
-html, body, div, span,
-h1, h2, h3, h4, h5, h6, p,
-code, strong, ul, li,
-footer, header, section {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent; }
+/*
+Error: Invalid CSS after "  }": expected selector or at-rule, was "}"
+        on line 301 of _style.scss
+        from line 2 of main.scss
 
-* {
-  box-sizing: border-box; }
+296: 
+297:   }
+298: 
+299: 
+300: 
+301: }
+302: 
+303: 
+304: /******animation*******\/
+305: 
+306: @keyframes fadeIn {
 
-footer, header, section {
-  display: block; }
-
-body {
-  line-height: 1.4; }
-
-ul {
-  list-style: none; }
-
-a {
-  text-decoration: none;
-  display: inline-block; }
-
-html {
-  font-family: 'Roboto', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.container {
-  width: 500px;
-  max-width: 100%;
-  margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px; }
-
-.main-content {
-  padding: calc(64px - 30px) 0;
-  border-bottom: 1px solid #f1f1f1; }
-
-.main-content__title {
-  margin-bottom: calc(64px - 10px);
-  text-align: center;
-  color: #4F4F4F;
-  font-size: 18px;
-  font-weight: 300;
-  background: url(../image/svg/placeholder.svg) no-repeat;
-  background-position: center;
-  padding: 30px 0 10px 0; }
-  .main-content__title strong {
-    color: #2D9CDB;
-    text-transform: capitalize; }
-  @media (min-width: 550px) {
-    .main-content__title {
-      font-size: 22px; } }
-
-.skill-name {
-  color: #4F4F4F;
-  font-size: 22px;
-  margin-bottom: 16px; }
-
-.skill-desc {
-  color: #4F4F4F;
-  font-size: 16px; }
-
-.skill-set__item {
-  position: relative;
-  display: flex;
-  margin-bottom: 32px; }
-  .skill-set__item:not(:last-child):after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 28px;
-    width: 2px;
-    height: 150%;
-    background: #b4b4b4; }
-  .skill-set__item::before {
-    content: "";
-    display: block;
-    margin-right: 20px;
-    height: 50px;
-    border-radius: 50%;
-    z-index: 1;
-    box-shadow: 0 3px 6px #0000003b;
-    flex: 0 0 50px; }
-    @media (min-width: 550px) {
-      .skill-set__item::before {
-        height: 56px;
-        flex: 0 0 56px; } }
-
-.item-1::before {
-  background: #2D9CDB;
-  background: url(../image/svg/002-code.svg) no-repeat 50%, #2D9CDB;
-  background-size: 26px; }
-@media (min-width: 550px) {
-  .item-1 {
-    background-size: 30px; } }
-
-.item-2::before {
-  background: #8F63E3;
-  background: url(../image/svg/001-layers.svg) no-repeat 50%, #8F63E3;
-  background-size: 30px; }
-
-.footer {
-  padding: 64px 0;
-  text-align: center;
-  background: #8F63E3; }
-  .footer p {
-    color: #fff;
-    margin-bottom: 16px;
-    font-size: 18px; }
-    @media (min-width: 550px) {
-      .footer p {
-        font-size: 20px; } }
-
-.footer-btn a {
-  color: #8F63E3;
-  padding: 8px 32px;
-  border-radius: 40px;
-  background: #fff;
-  font-size: 18px;
-  box-shadow: 0 2px 4px #593e7c;
-  transition: all .2s; }
-  .footer-btn a:hover {
-    box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.25); }
-
-.header {
-  text-align: center;
-  background: #fdfdff;
-  padding: 1.5rem 1rem;
-  border-bottom: 1px solid #2D9CDB;
-  border-top: 6px solid #2D9CDB; }
-  @media (min-width: 550px) {
-    .header {
-      font-size: 20px;
-      text-align: initial;
-      background: linear-gradient(lightgrey 2px, #fdfdff 0);
-      background-size: 100% 40px;
-      line-height: 45px;
-      background-origin: content-box;
-      border-bottom: none; } }
-
-.header .container {
-  width: 800px; }
-
-.header h1 {
-  color: #2D9CDB;
-  font-size: 20px; }
-  @media (min-width: 550px) {
-    .header h1 {
-      text-indent: 2rem;
-      font-size: 20px; }
-      .header h1::before, .header h1::after {
-        color: #717171;
-        font-weight: 300; }
-      .header h1:before {
-        content: "<h1>"; }
-      .header h1:after {
-        content: "</h1>"; } }
-.header p {
-  color: #8F63E3;
-  font-size: 20px; }
-  @media (min-width: 550px) {
-    .header p {
-      text-indent: 2rem;
-      font-weight: 700; }
-      .header p::before, .header p::after {
-        color: #717171;
-        font-weight: 300; }
-      .header p:before {
-        content: "<p>"; }
-      .header p:after {
-        content: "</p>"; } }
-
-@media (min-width: 550px) {
-  .code-wrapper::before, .code-wrapper::after {
-    color: #717171;
-    font-weight: 300;
-    position: relative; }
-  .code-wrapper:before {
-    content: "<header>";
-    top: 8px; }
-  .code-wrapper:after {
-    content: "</header>";
-    top: -4px; } }
-
-/******animation*******/
-@keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-.fade-in {
-  opacity: 0;
-  animation: fadeIn ease-in 1;
-  animation-fill-mode: forwards;
-  animation-duration: 1s; }
-
-.fade-in.one {
-  animation-delay: .3s; }
-
-.fade-in.two {
-  animation-delay: 0.8s; }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+_style.scss:301
+main.scss:2
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:42:in `parse'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:321:in `to_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/bin/scss:13:in `<top (required)>'
+C:/Ruby24-x64/bin/scss:22:in `load'
+C:/Ruby24-x64/bin/scss:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  }\": expected selector or at-rule, was \"}\"\A         on line 301 of _style.scss\A         from line 2 of main.scss\A \A 296: \A 297:   }\A 298: \A 299: \A 300: \A 301: }\A 302: \A 303: \A 304: /******animation*******/\A 305: \A 306: @keyframes fadeIn {"; }

@@ -14,7 +14,7 @@ html {
 }
 
 .container {
-  width: 500px;
+  width: 650px;
   max-width: 100%;
   margin: 0 auto;
   padding-left: $unit;
@@ -44,7 +44,12 @@ html {
     font-size: 22px;
   }
 }
-
+.skill-set{
+  padding: 0 10px;
+  @media (min-width: 550px) {
+    padding: 0 80px;
+  }
+}
 .skill-name {
   color: $text-color;
   font-size: 22px;
@@ -135,7 +140,7 @@ html {
 
 }
 
-.header {
+/*.header {
   text-align: center;
   background: #fdfdff;
   padding: 1.5rem 1rem;
@@ -220,6 +225,81 @@ html {
     }
   }
 }
+
+*/
+
+header {
+  background: #FAFAFA;
+  padding-top: 100px;
+  padding-bottom: $unit-large;
+  box-shadow: 0 0 4px #00000033;
+  color: $text-color;
+  //position: relative;
+  @media (min-width: 650px) {
+    padding-top: $unit-large;
+  }
+  padding-top: 100px;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    @media(min-width:650px) {
+      flex-direction: initial;
+    }
+  }
+  .text{
+    order: 2;
+    @media(min-width:650px) {
+     order:1;
+    }
+  }
+  .image {
+    order: 1;
+    @media(min-width:650px) {
+      order:2;
+    }
+  }
+  h1{
+    font-size: 28px;
+    font-weight: 300;
+    position: relative;
+    @media(min-width:650px) {
+      &::before{
+        content: 'Hello';
+        display: inline-block;
+        color: #fff;
+        background: $color-2;
+        padding: $unit-small $unit;
+        font-size: 20px;
+        font-weight: 700;
+        position: absolute;
+        top: -54px;
+        left: -12px;
+        font-family: 'Raleway', sans-serif;
+      }
+    }
+
+  }
+  p{
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  .image{
+    border-radius: 50%;
+    background: #fff;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 8px 0px #00000012;
+    }
+
+  }
+
+
+
+}
+
 
 /******animation*******/
 
