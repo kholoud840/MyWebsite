@@ -6,11 +6,14 @@ $unit-huge: $unit-large * 2;
 $color-1: #8F63E3;
 $color-2: #2D9CDB;
 $text-color: #4F4F4F;
+$sec-background-color: #FAFAFA;
+;
 
 html {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: $text-color;
 }
 
 .container {
@@ -26,14 +29,21 @@ html {
   border-bottom: 1px solid #f1f1f1;
 }
 
-.main-content__title {
 
+.main-title{
+  background: url(../image/svg/placeholder.svg) no-repeat;
+}
+
+.grid-title{
+  background: url(../image/svg/edit.svg) no-repeat;
+}
+
+.content__title {
   margin-bottom: calc(#{$unit-huge} - 10px);
   text-align: center;
   color: #4F4F4F;
   font-size: 18px;
   font-weight: 300;
-  background: url(../image/svg/placeholder.svg) no-repeat;
   background-position: center;
   padding: 30px 0 10px 0;
   strong {
@@ -44,12 +54,13 @@ html {
     font-size: 22px;
   }
 }
-.skill-set{
+.skill-set {
   padding: 0 10px;
   @media (min-width: 550px) {
     padding: 0 80px;
   }
 }
+
 .skill-name {
   color: $text-color;
   font-size: 22px;
@@ -140,166 +151,97 @@ html {
 
 }
 
-/*.header {
-  text-align: center;
-  background: #fdfdff;
-  padding: 1.5rem 1rem;
-  border-bottom: 1px solid $color-2;
-  border-top: 6px solid $color-2;
-  @media (min-width: 550px) {
-    font-size: 20px;
-    text-align: initial;
-    background: linear-gradient(lightgrey 2px, #fdfdff 0);
-    background-size: 100% 40px;
-    line-height: 45px;
-    background-origin: content-box;
-    border-bottom: none;
-  }
-}
-
-.header .container {
-  width: 800px;
-}
-
-.header {
-
-  h1 {
-    color: $color-2;
-    font-size: 20px;
-    @media (min-width: 550px) {
-      text-indent: 2rem;
-      font-size: 20px;
-
-      &::before, &::after {
-        color: #717171;
-        font-weight: 300;
-      }
-      &:before {
-        content: "<h1>";
-      }
-
-      &:after {
-        content: "</h1>";
-      }
-    }
-
-  }
-
-  p {
-    color: $color-1;
-    font-size: 20px;
-    @media (min-width: 550px) {
-      text-indent: 2rem;
-      font-weight: 700;
-      &::before, &::after {
-        color: #717171;
-        font-weight: 300;
-      }
-      &:before {
-        content: "<p>";
-      }
-
-      &:after {
-        content: "</p>";
-      }
-    }
-
-  }
-}
-
-.code-wrapper {
-  @media (min-width: 550px) {
-    &::before, &::after {
-      color: #717171;
-      font-weight: 300;
-      position: relative;
-    }
-    &:before {
-      content: "<header>";
-      top: 8px;
-    }
-
-    &:after {
-      content: "</header>";
-      top: -4px;
-    }
-  }
-}
-
-*/
-
 header {
-  background: #FAFAFA;
-  padding-top: 100px;
-  padding-bottom: $unit-large;
+  background: $sec-background-color;
   box-shadow: 0 0 4px #00000033;
   color: $text-color;
-  //position: relative;
-  @media (min-width: 650px) {
-    padding-top: $unit-large;
-  }
-  padding-top: 100px;
-  .container{
+  padding-top: $unit-large;
+  padding-bottom: $unit-large;
+  background-image: linear-gradient(to right, $color-2, $color-1);
+  background-size: 100% 4px;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    @media(min-width:650px) {
+    @media(min-width: 650px) {
       flex-direction: initial;
     }
   }
-  .text{
+  .text {
     order: 2;
-    @media(min-width:650px) {
-     order:1;
+    text-align: center;
+    position: relative;
+    @media(min-width: 650px) {
+      order: 1;
+      text-align: initial;
     }
   }
   .image {
     order: 1;
-    @media(min-width:650px) {
-      order:2;
-    }
-  }
-  h1{
-    font-size: 28px;
-    font-weight: 300;
-    position: relative;
-    @media(min-width:650px) {
-      &::before{
-        content: 'Hello';
-        display: inline-block;
-        color: #fff;
-        background: $color-2;
-        padding: $unit-small $unit;
-        font-size: 20px;
-        font-weight: 700;
-        position: absolute;
-        top: -54px;
-        left: -12px;
-        font-family: 'Raleway', sans-serif;
-      }
-    }
-
-  }
-  p{
-    font-weight: 700;
-    font-size: 22px;
-  }
-
-  .image{
+    margin-bottom: $unit;
     border-radius: 50%;
     background: #fff;
     width: 150px;
     height: 150px;
     box-shadow: 0 0 8px 0px #00000012;
+    position: relative;
+    overflow: hidden;
+    @media(min-width: 650px) {
+      order: 2;
+      margin-bottom: 0;
     }
 
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
   }
 
+  span {
+    display: inline-block;
+    color: #fff;
+    background: #2D9CDB;
+    padding: 4px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    top:-32px;
+    z-index: 1;
+    border-radius: 20px;
+    @media(min-width: 650px) {
+      padding: 4px 16px;
+      left: 0;
+      top: -10px;
+    }
 
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      width: 0;
+      height: 0;
+      border-left: 12px solid $color-2;
+      border-right: 28px solid transparent;
+      border-bottom: 13px solid transparent;
+    }
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 300;
+  }
+  p {
+    font-weight: 700;
+    font-size: 22px;
+  }
 
 }
-
 
 /******animation*******/
 
@@ -325,4 +267,60 @@ header {
 
 .fade-in.two {
   animation-delay: 0.8s;
+}
+
+/******github section*******/
+
+.github-section {
+  background: $sec-background-color;
+  padding: $unit-large 0;
+  text-align: center;
+  @media(min-width: 650px) {
+    text-align: initial;
+  }
+  p {
+    font-size: 16px;
+    display: inline-block;
+    line-height: 30px;
+  }
+
+  a {
+    display: inline-block;
+    padding: 2px 12px;
+    color: #fff;
+    background: #494949;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: all 0.3s;
+    &:hover {
+      background: $color-1;
+    }
+  }
+
+  svg {
+    width: 18px;
+    fill: #fff;
+    vertical-align: text-bottom;
+  }
+}
+
+/******grid******/
+.grid-section{
+  padding: $unit-large 0;
+}
+.grid-wrapper{
+  display: grid;
+  grid-gap:10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-item{
+  background: #fff;
+  border-radius: 4px;
+  padding:40px;
+  box-shadow: 0 0 6px #dddddd;
+}
+
+.big{
+  grid-column: 1/3;
 }
