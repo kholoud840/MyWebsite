@@ -26,7 +26,6 @@ html {
 
 .main-content {
   padding: calc(#{$unit-huge} - 30px) 0;
-  border-bottom: 1px solid #f1f1f1;
 }
 
 
@@ -282,9 +281,11 @@ header {
 
 /******github section*******/
 
-.github-section {
+.work-section {
   background: $sec-background-color;
   padding: $unit-large 0;
+  border-bottom: 1px solid #f1f1f1;
+  border-top: 1px solid #f1f1f1;
   text-align: center;
   @media(min-width: 650px) {
     text-align: initial;
@@ -294,12 +295,16 @@ header {
     display: inline-block;
     line-height: 30px;
   }
-
+  .github-link{
+    background: #494949;
+  }
+  .dribbble-link{
+    background: #ea4c89;
+  }
   a {
     display: inline-block;
     padding: 2px 12px;
     color: #fff;
-    background: #494949;
     border-radius: 20px;
     font-size: 16px;
     transition: all 0.3s;
