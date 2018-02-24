@@ -15,6 +15,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -45,6 +48,13 @@
         <g id="icon-dribbble">
             <path  d="M254.26 0C113.845 0 0 113.845 0 254.26s113.845 254.26 254.26 254.26 254.26-113.845 254.26-254.26C508.52 113.813 394.675 0 254.26 0zm0 444.51c-104.914 0-190.282-85.368-190.282-190.25S149.346 63.978 254.26 63.978s190.25 85.368 190.25 190.282-85.336 190.25-190.25 190.25z"/>
             <path d="M313.471 273.393c21.294 58.416 29.907 105.963 31.592 115.879 36.423-24.663 62.389-63.724 69.635-108.982-5.499-1.748-50.248-15.097-101.227-6.897zM282.006 281.275c-91.661 31.91-124.587 95.538-127.511 101.481 27.555 21.485 62.198 34.293 99.765 34.293 22.534.032 44.019-4.577 63.501-12.904-2.415-14.239-11.855-63.978-34.675-123.252l-1.08.382zM300.058 239.354l3.464 8.391c54.094-6.801 107.838 4.1 113.177 5.244-.318-38.361-14.016-73.608-36.645-101.259-3.369 4.608-30.638 39.537-90.771 64.073a505.22 505.22 0 0 1 10.775 23.551zM265.606 255.913l6.42-1.907c-4.1-9.249-8.549-18.497-13.19-27.587-81.172 24.282-159.961 23.265-167.08 23.106l-.064 4.958c.032 41.73 15.828 79.869 41.794 108.696 3.687-6.294 48.278-80.188 132.12-107.266zM245.424 201.406c-26.952-47.896-55.969-88.133-60.26-94.013-45.481 21.453-79.488 63.374-90.008 113.813 7.279.095 74.245.381 150.268-19.8zM362.034 132.914c-28.763-25.458-66.457-40.968-107.774-40.968-13.094 0-25.871 1.557-38.075 4.513 4.481 6.039 34.007 46.243 60.641 95.157 57.812-21.643 82.252-54.538 85.208-58.702z"/>
+        </g>
+    </defs>
+    <defs>
+        <g id="icon-instagram">
+            <path d="M24.825 29.796a4.978 4.978 0 0 0 4.972-4.97 4.954 4.954 0 0 0-.94-2.897 4.964 4.964 0 0 0-4.029-2.073c-1.659 0-3.126.82-4.031 2.072a4.947 4.947 0 0 0-.94 2.897 4.973 4.973 0 0 0 4.968 4.971zM35.678 18.746V13.96l-.623.002-4.164.013.016 4.787z"/>
+            <path d="M24.826 0C11.137 0 0 11.137 0 24.826c0 13.688 11.137 24.826 24.826 24.826 13.688 0 24.826-11.138 24.826-24.826C49.652 11.137 38.516 0 24.826 0zm14.119 21.929v11.56a5.463 5.463 0 0 1-5.457 5.458H16.164a5.462 5.462 0 0 1-5.457-5.458V16.165a5.462 5.462 0 0 1 5.457-5.457h17.323a5.463 5.463 0 0 1 5.458 5.457v5.764z"/>
+            <path d="M32.549 24.826c0 4.257-3.464 7.723-7.723 7.723s-7.722-3.466-7.722-7.723a7.67 7.67 0 0 1 .568-2.897h-4.215v11.56a2.706 2.706 0 0 0 2.706 2.704h17.323a2.707 2.707 0 0 0 2.706-2.704v-11.56h-4.217c.367.894.574 1.873.574 2.897z"/>
         </g>
     </defs>
 </svg>
@@ -117,21 +127,30 @@
         </a>
     </div>
 </section>
-<section class="grid-section">
+<section class="grid-section work-section">
     <div class="container">
-        <h2 class="content__title grid-title  ">In my free time, I like to<strong> Draw & Color</strong></h2>
-        <div class="grid-wrapper">
-            <div class="grid-item big">
-                <img src="image/Image%202017-12-27%20at%2012.04.38%20PM.jpg" alt="">
+        <h2 class="content__title grid-title">In my free time, I like to<strong> Draw & Color</strong></h2>
+        <div class="grid-wrapper" id="instafeed" >
+            <!--<div class="grid-item big">
+                 <img src="image/Image%202017-12-27%20at%2012.04.38%20PM.jpg" alt="">
             </div>
-            <div class="grid-item">
+             <div class="grid-item instaimg">
                 <img src="image/Image%202017-12-27%20at%2012.04.39%20PM.jpg" alt="">
             </div>
             <div class="grid-item">
                 <img src="image/Image%202017-12-27%20at%2012.04.38%20PM%20(1).jpg" alt="">
-            </div>
-
+            </div> -->
         </div>
+        <div class="instagramfeed">
+            <span>Want to see more? take a look at</span>
+            <a class="instagram-link" href="https://instagram.com/kholoud840">instagram
+                <svg viewBox="0 0 49.652 49.652">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-instagram"></use>
+                </svg>
+            </a>
+        </div>
+
+       
     </div>
 </section>
 <footer class="footer">
