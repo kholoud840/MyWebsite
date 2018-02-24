@@ -304,7 +304,7 @@ header {
   .dribbble-link {
     background: #ea4c89;
   }
-  .instagram-link{
+  .instagram-link {
     background: #bc2a8d;
   }
   a {
@@ -325,11 +325,12 @@ header {
     vertical-align: text-bottom;
   }
 }
-.instagramfeed{
-  padding-top:$unit;
-  padding-bottom:$unit;
+
+.instagramfeed {
+  padding-top: $unit;
+  padding-bottom: $unit;
 }
-/******grid******/
+
 .grid-section {
   padding: $unit-large 0;
 }
@@ -337,7 +338,7 @@ header {
 .grid-wrapper {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns:1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 
 }
 
