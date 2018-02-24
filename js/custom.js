@@ -10,7 +10,6 @@ $(document).ready(function() {
         get: 'user',
         userId: '1834020412',
         limit: 3,
-        tagName: 'blue',
         resolution: 'standard_resolution',
         accessToken: '1834020412.1677ed0.84d8803956bd47eea8444d716084f331',
         sortBy: 'most-recent',
