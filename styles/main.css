@@ -283,7 +283,8 @@ header {
 
 .instagramfeed {
   padding-top: 16px;
-  padding-bottom: 16px; }
+  padding-bottom: 16px;
+  text-align: center; }
 
 .grid-section {
   padding: 32px 0; }

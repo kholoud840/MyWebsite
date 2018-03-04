@@ -15,10 +15,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <script src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/instafeed.min.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
-
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111408296-1"></script>
@@ -30,6 +27,21 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-111408296-1');
+
+        document.addEventListener("DOMContentLoaded", function(){
+            // Handler when the DOM is fully loaded
+            var userFeed = new Instafeed({
+                get: 'user',
+                userId: '1834020412',
+                limit: 3,
+                resolution: 'standard_resolution',
+                accessToken: '1834020412.1677ed0.84d8803956bd47eea8444d716084f331',
+                sortBy: 'most-recent',
+                template: '<div class="grid-item instaimg"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></div>'
+            });
+
+            userFeed.run();
+        });
     </script>
 
 
