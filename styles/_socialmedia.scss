@@ -1,31 +1,31 @@
-.socialmedia-section{
+.socialmedia-section {
   background: #f4efff;
   padding-top: $unit;
   padding-bottom: $unit;
 
-  ul{
+  ul {
     display: flex;
     justify-content: center;
   }
-  li{
+  li {
     @media (min-width: 650px) {
       padding: 1em;
     }
     padding: 0.5em;
   }
-  a{
+  a {
     color: $text-color;
   }
-  a.linkedin{
-    color:#007bb5;
+  a.linkedin {
+    color: #007bb5;
   }
-  a.twitter{
-    color:#1da1f2;
+  a.twitter {
+    color: #1da1f2;
   }
-  a.instagram{
-    color:#c32aa3;
+  a.instagram {
+    color: #c32aa3;
   }
-  a.dribble{
-    color:#ea4c89;
+  a.dribble {
+    color: #ea4c89;
   }
 }
