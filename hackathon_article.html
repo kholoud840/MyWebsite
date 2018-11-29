@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kholoud Ameen/Journal</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <meta property="og:title" content="Kholoud Ameen">
+    <meta property="og:description" content="UX, UI Designer & Front-End Developer">
+    <meta property="og:image" content="http://--/thumbnail.jpg">
+    <meta property="og:url" content="http://--/index.htm">
+    <meta name="twitter:card" content="--">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111408296-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-111408296-1');
+
+        document.addEventListener("DOMContentLoaded", function(){
+            // Handler when the DOM is fully loaded
+            var userFeed = new Instafeed({
+                get: 'user',
+                userId: '1834020412',
+                limit: 3,
+                resolution: 'standard_resolution',
+                accessToken: '1834020412.1677ed0.84d8803956bd47eea8444d716084f331',
+                sortBy: 'most-recent',
+                template: '<div class="grid-item instaimg"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></div>'
+            });
+
+            userFeed.run();
+        });
+    </script>
+
+
+</head>
+<body>
+<header class="small-header">
+    <div class="nav">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="journal.html" class="active">Journal</a></li>
+                    <li><a href="index.html" >About</a></li>
+                </ul>
+            </nav>
+            <div class="small-img-wrapper">
+                <h1>Kholoud Ameen</h1>
+                <div class="image">
+                    <img src="image/kholoud.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+<section class="article">
+    <div class="container">
+        <h1 class="article-title">My first international Hackathon experience</h1>
+
+        <p class="article-text">
+            It was three days full of fun, knowledge, and experience. The 2018 annual New York University Abu Dhabi (NYUAD) International Hackathon for Social Good in the Arab world bring together more than 80 computer science students representing 30 countries,
+            as I am recalling the moments when I have been selected to attend the hackathon throw this day I decided to write a summary of my experience through this 3-days hackathon.
+        </p>
+        <div class="article-img-wrapper">
+            <img src="image/hack1.PNG" alt="">
+        </div>
+
+        <h2 class="article-subtitle">
+            Ideation Part:
+        </h2>
+        <p class="article-text">
+            When we gathered as a team in the first day we were a group of nine – six students and three mentors named our team by Inshany (AdviceMe), we started brainstorming session, we set clear problems that exist in the Arab community, the magic comes when gathering different ideas and words from people with different backgrounds to come up with a possible technical solution. Hearing ideas from different perspectives was tweaking the idea until we all became satisfied with it.
+        </p>
+        <div class="article-img-wrapper">
+            <img src="image/hack2.jpeg" alt="">
+        </div>
+        <p class="article-text">
+            Our Idea was to improve student participation and assessment in schools that are based in refugee camps and we have discussed to start in the largest refugee camp in Jordan which houses over 33,000 active students in 3 different schools, also we decided to use emotion reading artificial intelligence and other interactive technologies to provide teachers with live, in-class feedback.
+        </p>
+        <h2 class="article-subtitle">
+            Implementation/Coding  Part:
+        </h2>
+        <p class="article-text">
+            We use an image from a smart phone from which we use the AI to scan the facial expression of the students and use this data as a crucial feedback for the teachers and schools.
+            Since we already extract information from an image, we decided to take our solution a step further by adding an anonymous voting feature using QR codes for in-class quizzes. This feature aims to encourage student-teacher interaction, and at the same time eliminates biases from the teacher. I volunteered to work on the part of the front-end since I had spent a lot of time as a front-end developer in previous projects.
+            Imagine the case, that the teacher asks an MCQ question, and then students answer by raising their QR codes corresponding to the answers (like ABCD), The data is turned to an interactive graph for further analysis
+        </p>
+        <div class="article-img-wrapper">
+            <img src="image/hack3.PNG" alt="">
+        </div>
+        <h2 class="article-subtitle">
+            Presentation/demo part:
+        </h2>
+        <div class="article-img-wrapper">
+            <img src="image/hack5.jpeg" alt="">
+        </div>
+        <p class="article-text">
+            Excitement and tension filled the air! After we submitted the project code and presentation via GitHub, we start our rehearsals for many times through the last day with the advising committee to deliver a 5 minutes final presentation with the application demo.
+            So, for the demo part, we took a normal picture of 3 students holding their QR codes (which represent a letter as a choice to MCQ), the camera will not only read the QR codes but also recognize the facial expression and represent these data as graphs on a teacher dashboard.
+            At the end of our presentation and after we answered all judges questions I realized how knowledge and teamwork can really make a change to a community.
+        </p>
+        <div class="article-img-wrapper">
+            <img src="image/hack4.jpeg" alt="">
+        </div>
+        <p class="article-text">
+            For me, it was one of the most valuable and rewarding experiences and came out knowing people from all over the world. I was thinking it would be just a cool event to come up with something like any other hackathon. But this hackathon was great in so many ways which make it one of my year highlights. I really appreciate all the time and effort that the NYUAD team put into this and can’t wait for the next.
+        </p>
+        <div class="article-img-wrapper">
+            <img src="image/hack6.jpeg" alt="">
+        </div>
+        <div class="press-container">
+            <div class="press">
+                <h2 class="article-subtitle">
+                    English Press:
+                </h2>
+                <a href="https://www.techatbloomberg.com/blog/bloomberg-engineers-foster-next-generation-tech-talent-abu-dhabi-hackathon/">Bloomberg</a>
+                <a href="https://www.wamda.com/2018/05/apps-locate-missing-refugees-tackle-counterfeit-medicine-win-nyu-abu-dhabi-international-hackathon">WAMDA</a>
+                <a href="http://www.adwonline.ae/hackers-good-world/">Abu Dhabi World magazine </a>
+            </div>
+            <div class="press">
+                <h2 class="article-subtitle">
+                    Arabic Press:
+                </h2>
+                <a href="https://www.albayan.ae/across-the-uae/education/2018-05-02-1.3253801">Al Bayan </a>
+                <a href="http://www.alkhaleej.ae/alkhaleej/page/7b554881-569e-4d12-8887-3ed441743172">Al Khaleej </a>
+            </div>
+        </div>
+
+        <p class="thanks">Thanks for reading!</p>
+    </div>
+</section>
+<section class="socialmedia-section">
+    <div class="container">
+        <ul>
+            <li><a href="https://twitter.com/kholoud840" class="twitter">Twitter</a></li>
+            <li><a href="https://dribbble.com/kholoud840" class="dribble">Dribbble</a></li>
+            <li><a href="https://www.instagram.com/kholoud840/" class="instagram">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/kholoudameen/" class="linkedin">LinkedIn</a></li>
+        </ul>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <p>Do you have an interesting project that we can collaborate on?</p>
+        <div class="footer-btn">
+            <a href="mailto:kholoudameen840@gmail.com">Get in touch!</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

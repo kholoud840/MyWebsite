@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Journal/NYUAD Hack</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <meta property="og:title" content="Kholoud Ameen">
+    <meta property="og:description" content="UX, UI Designer & Front-End Developer">
+    <meta property="og:image" content="http://--/thumbnail.jpg">
+    <meta property="og:url" content="http://--/index.htm">
+    <meta name="twitter:card" content="--">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111408296-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-111408296-1');
+
+        document.addEventListener("DOMContentLoaded", function(){
+            // Handler when the DOM is fully loaded
+            var userFeed = new Instafeed({
+                get: 'user',
+                userId: '1834020412',
+                limit: 3,
+                resolution: 'standard_resolution',
+                accessToken: '1834020412.1677ed0.84d8803956bd47eea8444d716084f331',
+                sortBy: 'most-recent',
+                template: '<div class="grid-item instaimg"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></div>'
+            });
+
+            userFeed.run();
+        });
+    </script>
+
+
+</head>
+<body>
+<header class="small-header">
+    <div class="nav">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="journal.html" class="active">Journal</a></li>
+                    <li><a href="index.html" >About</a></li>
+                </ul>
+            </nav>
+            <div class="small-img-wrapper">
+                <h1>Kholoud Ameen</h1>
+                <div class="image">
+                    <img src="image/kholoud.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+<section>
+    <div class="journal-intro">
+        <div class="container">
+        <p>I like to write about things that have made an impact on me, whether it be events, articles, ideas,
+            or opinions on books I have read. I hope to write more pages and learn from my mistakes.</p>
+        </div>
+    </div>
+</section>
+<div class="articles-grid">
+    <div class="container">
+            <article class="recent-section line-d pb-big">
+            <a href="hackathon_article.html">
+                <div class="image-wrapper">
+                    <img src="image/hackGroup.jpg" alt="">
+                </div>
+                <h3>My first international Hackathon experience</h3>
+            </a>
+        </article>
+    </div>
+</div>
+<section class="socialmedia-section">
+    <div class="container">
+        <ul>
+            <li><a href="https://twitter.com/kholoud840" class="twitter">Twitter</a></li>
+            <li><a href="https://dribbble.com/kholoud840" class="dribble">Dribbble</a></li>
+            <li><a href="https://www.instagram.com/kholoud840/" class="instagram">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/kholoudameen/" class="linkedin">LinkedIn</a></li>
+        </ul>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <p>Do you have an interesting project that we can collaborate on?</p>
+        <div class="footer-btn">
+            <a href="mailto:kholoudameen840@gmail.com">Get in touch!</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.journal-intro{
+  //background: $sec-background-color;
+  //border-bottom: 1px solid #f1f1f1;
+  //border-top: 1px solid #f1f1f1;
+  padding: 1em;
+  margin-top: $unit;
+  p{
+    padding: 1em;
+    color: $text-color;
+    text-align: center;
+    line-height: 1.8;
+
+    &::after{
+      content: '';
+      display: block;
+      height: 2px;
+      width: 50px;
+      background: $color-1;
+      margin: 0 auto;
+      margin-top: $unit-large;
+    }
+  }
+}
