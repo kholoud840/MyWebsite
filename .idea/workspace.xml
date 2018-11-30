@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1651873-a7d5-4266-9f92-4365d0552f35" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/_socialmedia.scss" afterPath="$PROJECT_DIR$/styles/_socialmedia.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/main.css" afterPath="$PROJECT_DIR$/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/main.css.map" afterPath="$PROJECT_DIR$/styles/main.css.map" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hackathon_article.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hackathon_article.html" afterPath="$PROJECT_DIR$/NYUAD-hackathon.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="148">
-              <caret line="163" column="41" lean-forward="true" selection-start-line="163" selection-start-column="41" selection-end-line="163" selection-end-column="41" />
+              <caret line="163" column="41" lean-forward="false" selection-start-line="163" selection-start-column="41" selection-end-line="163" selection-end-column="41" />
               <folding>
                 <element signature="n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -91,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hackathon_article.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackathon_article.html">
+      <file leaf-file-name="NYUAD-hackathon.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NYUAD-hackathon.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
+            <state relative-caret-position="2600">
               <caret line="140" column="17" lean-forward="false" selection-start-line="140" selection-start-column="17" selection-end-line="140" selection-end-column="17" />
               <folding>
                 <element signature="n#div#0;n#div#6;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -228,6 +226,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -275,7 +274,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -514,18 +512,18 @@
       <workItem from="1543057403992" duration="1670000" />
       <workItem from="1543336821160" duration="599000" />
       <workItem from="1543505538862" duration="1714000" />
-      <workItem from="1543571096805" duration="181000" />
+      <workItem from="1543571096805" duration="758000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159609000" />
+    <option name="totallyTimeSpent" value="160186000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1924" height="1046" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24852705" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24852705" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289941" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -959,20 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackathon_article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="140" column="17" lean-forward="false" selection-start-line="140" selection-start-column="17" selection-end-line="140" selection-end-column="17" />
-          <folding>
-            <element signature="n#div#0;n#div#6;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#h2#0;n#div#0;n#div#6;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#6;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/_article.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
@@ -1008,7 +992,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
-          <caret line="163" column="41" lean-forward="true" selection-start-line="163" selection-start-column="41" selection-end-line="163" selection-end-column="41" />
+          <caret line="163" column="41" lean-forward="false" selection-start-line="163" selection-start-column="41" selection-end-line="163" selection-end-column="41" />
           <folding>
             <element signature="n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1017,6 +1001,20 @@
             <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NYUAD-hackathon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2600">
+          <caret line="140" column="17" lean-forward="false" selection-start-line="140" selection-start-column="17" selection-end-line="140" selection-end-column="17" />
+          <folding>
+            <element signature="n#div#0;n#div#6;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#h2#0;n#div#0;n#div#6;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#6;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
