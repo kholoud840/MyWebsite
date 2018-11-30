@@ -451,7 +451,8 @@ header {
       .socialmedia-section li {
         padding: 1em; } }
   .socialmedia-section a {
-    color: #4F4F4F; }
+    color: #4F4F4F;
+    font-weight: bold; }
   .socialmedia-section a.linkedin {
     color: #007bb5; }
   .socialmedia-section a.twitter {
