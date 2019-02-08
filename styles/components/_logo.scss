@@ -1,0 +1,14 @@
+.c-logo{
+  align-items: center;
+
+  img:first-of-type{
+    border-radius: 50%;
+    max-height: 70px;
+    max-width: 70px;
+  }
+  img:last-of-type{
+    max-height: 50px;
+    margin-top: 12px;
+    margin-left: 12px;
+  }
+}

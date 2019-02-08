@@ -1,0 +1,26 @@
+
+.o-wrapper--wide{
+  padding: 1em;
+  padding: 1em calc(50% - 530px);
+}
+.o-wrapper{
+  padding: 1em;
+  padding: 1em calc(50% - 420px);
+}
+
+.o-grid{
+  display: grid;
+}
+
+.o-grid-12{
+  grid-template-columns: repeat(12 ,1fr);
+}
+
+.o-flex{
+  display: flex;
+}
+
+.o-flex-center{
+  justify-content: space-between;
+  align-items: center;
+}
