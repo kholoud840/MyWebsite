@@ -1,7 +1,11 @@
 
 .o-wrapper--wide{
   padding: 1em;
-  padding: 1em calc(50% - 530px);
+
+
+  @media (min-width: 1060px) {
+    padding: 1em calc(50% - 530px);
+  }
 }
 .o-wrapper{
   padding: 1em;
