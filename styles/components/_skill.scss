@@ -1,0 +1,48 @@
+.c-skill {
+  border-radius: 8px;
+  padding: 1.5em;
+  h2 {
+    font-size: 20px;
+    margin-bottom: $unit;
+  }
+}
+
+.c-skill:first-of-type{
+  margin-bottom: $unit;
+}
+
+.c-skill--code {
+  background: #EBF5FF;
+  background: #EBF5FF url(../image/svg/002-code.svg);
+  background-position: right -145px top 8px;
+  background-size: 100% 58px;
+  background-repeat: no-repeat, repeat;
+  h2 {
+    color: #5C96DF;
+  }
+}
+
+.c-skill--design {
+  background: #FFF1F6;
+  background: #FFF1F6 url(../image/svg/001-layers.svg);
+  background-position: right -145px top 8px;
+  background-size: 100% 58px;
+  background-repeat: no-repeat, repeat;
+  h2 {
+    color: #E363B0;
+  }
+}
+
+.c-section--skills{
+  @media (min-width:500px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: $unit-large;
+
+
+    .c-skill:first-of-type{
+      margin-bottom: 0;
+    }
+
+  }
+}

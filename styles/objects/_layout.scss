@@ -9,15 +9,22 @@
 }
 .o-wrapper{
   padding: 1em;
-  padding: 1em calc(50% - 420px);
+  @media (min-width: 1060px) {
+    padding: 1em calc(50% - 420px);
+  }
 }
 
 .o-grid{
   display: grid;
+  grid-gap: $unit-large;
 }
 
 .o-grid-12{
   grid-template-columns: repeat(12 ,1fr);
+}
+
+.o-grid--2{
+  grid-template-columns: repeat(2 ,1fr);
 }
 
 .o-flex{

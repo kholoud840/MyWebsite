@@ -1,0 +1,23 @@
+.c-section__socialmedia {
+  text-align: center;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  li:not(:last-child){
+    margin-right: 40px;
+  }
+
+  a {
+    padding: 0.5em;
+    color: #000;
+    font-size: 18px;
+  }
+
+  h2{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: $unit-large;
+  }
+}

@@ -1,0 +1,61 @@
+.c-section--work {
+  background: linear-gradient(#FBFBFB 50%, #F4F4F4 50%);
+  background-size: 100% 30px;
+  .o-wrapper{
+    //display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    //position: relative;
+  }
+
+  p {
+    font-size: 18px;
+    display: inline-block;
+    line-height: 30px;
+  }
+  .github-link {
+    background: #494949;
+  }
+  .dribbble-link {
+    background: #ea4c89;
+  }
+
+  a {
+    display: inline-block;
+    padding: 2px 12px;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: all 0.3s;
+    &:hover {
+      background: $color-1;
+    }
+  }
+}
+
+.c-works{
+  width: 50%;
+  padding: 2em 0;
+
+  position: relative;
+}
+.c-works--images{
+  position: absolute;
+  top:30px;
+  right:-342px;
+  img{
+    width: auto;
+    max-width: 100%;
+    max-height: 200px;
+  }
+  img:last-of-type{
+    //position: absolute;
+    //right: -70px;
+    //transform: rotate(7deg);
+  }
+  .second-image{
+    position: absolute;
+    right: -70px;
+    transform: rotate(7deg);
+  }
+}
